@@ -8,3 +8,5 @@ Sample applications are available for the other frameworks here:
 * FastAPI [https://github.com/Azure-Samples/msdocs-python-fastapi-webapp-quickstart](https://github.com/Azure-Samples/msdocs-python-fastapi-webapp-quickstart)
 
 If you need an Azure account, you can [create one for free](https://azure.microsoft.com/en-us/free/).
+
+[![Build Status](https://dev.azure.com/vigneshrsr/python-flask-webapp/_apis/build/status%2Fragavavr.msdocs-python-flask-webapp-quickstart?branchName=main)](https://dev.azure.com/vigneshrsr/python-flask-webapp/_build/latest?definitionId=8&branchName=main)
