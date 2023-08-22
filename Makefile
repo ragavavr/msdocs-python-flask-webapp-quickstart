@@ -1,7 +1,6 @@
 setup:
 	python3 -m venv antenv &&\
     source antenv/bin/activate
-	export PATH=$HOME/.local/bin:$PATH
 install:
 	python3 -m pip install --upgrade pip &&\
     pip install -r requirements.txt
