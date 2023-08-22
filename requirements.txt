@@ -1,2 +1,2 @@
 Flask==2.0.2
-gunicorn
+pylint==2.6.2
