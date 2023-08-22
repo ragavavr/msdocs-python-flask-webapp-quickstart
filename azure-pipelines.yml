@@ -27,13 +27,16 @@ stages:
     pool: myAgentPool
     steps:
     - script: |
-        python3 -m venv antenv
-        source antenv/bin/activate
-        python3 -m pip install --upgrade pip
-        pip install setup
-        pip install -r requirements.txt
+        make setup
+        make install
       workingDirectory: $(projectRoot)
       displayName: 'Install requirements'
+    
+    - script: |
+        make setup
+        make lint
+      workingDirectory: $(projectRoot)
+      displayName: 'Run lint tests'
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
