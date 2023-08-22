@@ -28,13 +28,13 @@ stages:
     steps:
     - script: |
         make setup
-        export PATH=$HOME/.local/bin:$PATH
         make install
       workingDirectory: $(projectRoot)
       displayName: 'Install requirements'
     
     - script: |
         make setup
+        export PATH=$HOME/.local/bin:$PATH
         make lint
       workingDirectory: $(projectRoot)
       displayName: 'Run lint tests'
