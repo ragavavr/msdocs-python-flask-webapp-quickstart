@@ -28,6 +28,7 @@ stages:
     steps:
     - script: |
         make setup
+        export PATH=$HOME/.local/bin:$PATH
         make install
       workingDirectory: $(projectRoot)
       displayName: 'Install requirements'
